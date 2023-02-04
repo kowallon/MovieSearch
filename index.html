@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Search your movie</title>
+</head>
+<body>
+
+    <nav>
+        <div class="topBar">
+            <h1>Find your film</h1>
+            <a href="watchlist.html" >My watchlist</a>
+        </div>
+        <div class="searchBar" id="searchBar">
+        
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" name="search" id="searchBox" placeholder="Search for a movie">
+            <button class="searchBtn" id="searchBtn">Search</button>
+                
+        </div>
+    </nav>
+     
+
+    <main id="main" class="main">
+        
+        <i class="fa-solid fa-film" id="pc1"></i>
+        <h2 id="pc2">Start exploring</h2>
+
+
+        <div class="movieList" id="movieList">
+            
+        </div>
+    </main>
+    
+
+    <script src="index.js" type="module"></script>
+</body>
+</html>

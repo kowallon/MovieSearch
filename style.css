@@ -1,0 +1,165 @@
+body{
+    font-family: 'Inter', sans-serif;
+    margin: 0 auto;
+    max-width: 1080px;
+    /* text-align: center; */
+}
+
+/*navbar https://unsplash.com/photos/THJJRUhNlEc*/
+
+nav{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 30vh;
+    background-position-y:-250px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: space-around;
+    align-items: center;
+    background-image: url("https://images.unsplash.com/photo-1628432136678-43ff9be34064?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=663&q=80");
+}
+
+.topBar{
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-around;
+}
+
+nav::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+nav h1{
+    position: relative;
+    color: white;
+    font-size: 2.7rem;
+    font-weight: 800;
+}
+
+nav a{
+    position: relative;
+    text-decoration: none;
+    color: white;
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+/*style mobile and wide nav here*/
+
+/*searchBar*/
+
+.searchBar{
+    position: absolute;
+    border: solid 1px gray;
+    top: 90%;
+    border-radius: 5px;
+    background-color: white;
+}
+
+.fa-magnifying-glass{
+    margin-left: 10px;
+}
+
+.searchBar input{
+    border: none;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    padding: 10px;
+    border-right: 1px solid #DFDDDD;
+    min-width: 300px;   
+}
+
+.searchBar input:focus{
+    outline: none;
+}
+
+.searchBtn{
+    border: none;
+    background-color: transparent;
+    font-weight: 500;
+    padding: 0 20px 0 20px;
+    font-size: 1.125rem;
+}
+
+
+/*main*/
+
+.main{
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: 67vh;
+    justify-content: center;
+    align-items: center;
+    color: #c7c6c6;
+}
+
+
+.fa-film{
+    font-size: 70px;
+}
+
+/*main with results*/
+.movieList{
+    color: black;
+    margin-top: 1rem;
+    position: absolute;
+    height: 67vh;
+}
+
+.movie {
+    margin: 10px auto 10px auto;
+    position: relative;
+    height: 33%;
+    max-width: 1080px;
+    border-bottom: 1px solid gray;
+}
+
+
+.poster{
+    height: 158px;
+    width: 125px;
+}
+
+.titleWrap, .detailsWrap, .description, .mainWrap{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.addToWatchlist{
+    cursor: pointer;
+}
+
+.mainWrap{
+    gap: 30px;
+    max-width: 100%;
+}
+
+.infoWrap{
+    display: flex;
+    flex-direction: column;
+}
+
+.fa-star{
+    color: #FEC654;
+
+}
+
+.hidden{
+    display: none !important;
+}
+
+/*Watchlist*/
+.main a{
+    color: rgb(5, 5, 5);
+    text-decoration: none;
+}

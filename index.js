@@ -92,7 +92,7 @@ searchBtn.addEventListener("click",function(){
                     //Render html with results
                     .then(moviesArr =>{
                         //check if movie is already liked to change its icon
-                        if(idsInStorage.includes(moviesArr.imdbID)){
+                        if(idsInStorage && idsInStorage.includes(moviesArr.imdbID)){
                             document.getElementById("movieList").innerHTML += `
                             <div class="movie">
                                 <div class="mainWrap">
@@ -176,7 +176,7 @@ document.body.addEventListener("click", function(e){
         moviesOnWatchlist.push(e.target.dataset.filmid)   
         console.log(moviesOnWatchlist)
         localStorage.setItem("moviesOnWatchlist", JSON.stringify(moviesOnWatchlist))
-        document.getElementById(e.target.dataset.filmid).innerHTML = `<i class="fa-solid fa-circle-check added" data-like="true"></i> Already on watchlist`
+        document.getElementById(e.target.dataset.filmid).innerHTML = `<i class="fa-solid fa-circle-check added"></i> Already on watchlist`
         document.getElementById(e.target.dataset.filmid).classList.add("added")    
     }
 

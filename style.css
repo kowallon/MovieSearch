@@ -52,7 +52,6 @@ nav a{
     font-weight: 700;
 }
 
-/*style mobile and wide nav here*/
 
 /*searchBar*/
 
@@ -118,7 +117,7 @@ nav a{
 .movie {
     margin: 10px auto 10px auto;
     position: relative;
-    height: 33%;
+    /* height: 33%; */
     max-width: 1080px;
     border-bottom: 1px solid gray;
 }
@@ -158,8 +157,47 @@ nav a{
     display: none !important;
 }
 
+.added{
+    cursor: default;
+}
+
 /*Watchlist*/
 .main a{
     color: rgb(5, 5, 5);
     text-decoration: none;
+}
+
+
+@media (max-width:500px) { 
+
+    nav{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        height: 25vh;
+        background-position-y:-90px;
+    }
+
+    nav h1{
+        font-size: 1.3rem;
+    }
+    
+    nav a{
+        font-size: 0.75rem;
+    }
+        
+    .searchBar input{
+        min-width: 100px;   
+        max-width: 200px;
+    }
+    .movie{
+        border: none;
+    }
+
+    .mainWrap{
+        border-bottom: solid 1px;
+        width: 90%;
+        margin: 2px auto;
+    }
+    
 }
